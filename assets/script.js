@@ -29,7 +29,9 @@ generatePassword.addEventListener("click", function(event){
     passwordLength = rangeValue.value;
 
    const finishedPassword = [];
-    
+   
+   
+   if (hasLowercase || hasUppercase || hasNumbers || hasSpecial){
     for (var i = 0; i < passwordLength; i++) {
         x = Math.floor(Math.random() * 4); //generates a number between 0 and 3
         if (x == 0 && hasLowercase) {
@@ -49,10 +51,16 @@ generatePassword.addEventListener("click", function(event){
             finishedPassword.push(selectedSpecial);
         } else {i--}
     
-    }
-    document.getElementById("password").innerHTML = finishedPassword;
+    }} else {alert("Your password needs something in it!")}
+
+var filteredPassword = finishedPassword.filter(function(value, index, arr){
+    return value == ",";
+})
+
+    document.getElementById("password").innerHTML = finishedPassword.join('');
+
   
-// need to remove ,'s from password 
+
 
 
     // console.log(hasLowercase);
