@@ -35,7 +35,6 @@ generatePassword.addEventListener("click", function(event){
         if (x == 0 && hasLowercase) {
             const selectedLowercase = listOfLowercase[Math.floor(Math.random() * 26)]; //sets selectedLowercase to a random lowercase letter
             finishedPassword.push(selectedLowercase);
-
         }
          else if (x == 1 && hasUppercase) {
             const selectedUppercase = listOfUppercase[Math.floor(Math.random() * 26)];
@@ -48,13 +47,12 @@ generatePassword.addEventListener("click", function(event){
         else if (x == 3 && hasSpecial) {
             const selectedSpecial = listOfSpecialCharacters[Math.floor(Math.random() * 27)];
             finishedPassword.push(selectedSpecial);
-        }
-    // console.log(finishedPassword);
+        } else {i--}
     
     }
     document.getElementById("password").innerHTML = finishedPassword;
   
-
+// need to remove ,'s from password 
 
 
     // console.log(hasLowercase);
