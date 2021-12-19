@@ -9,8 +9,7 @@
 
     <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/styles.css">
-    <script src="assets/script.js">
-    </script>
+    
 </head>
 <body>
     <header>
@@ -18,17 +17,26 @@
     </header>
 
     <content>
-        <input type="range" id="slider" min="8" max="128" value="60">
-        <p id="sliderValue">60</p>
+        <input type="range" id="password-range" min="8" max="128">
+        <p id="password-length">68</p>
+
+        
 
         <form>
-            <input type="checkbox" id="upperCase" name="upperCase" value="upperCase">
-            <label for="upperCase">Include Uppercase</label><br>
-            <input type="checkbox" id="numbers" name="numbers" value="numbers">
+            <input type="checkbox" id="lower-case">
+            <label for="lower-case">Include Lowercase</label><br>
+            
+            <input type="checkbox" id="upper-case">
+            <label for="upper-case">Include Uppercase</label><br>
+
+            <input type="checkbox" id="numbers">
             <label for="numbers">Include Numbers</label><br>
-            <input type="checkbox" id="specialChar" name="specialChar" value="special">
-            <label for="specialChar"> Include Special Characters</label>
+
+            <input type="checkbox" id="special-character">
+            <label for="special-character"> Include Special Characters</label>
           </form>
+
+          <button id="generate">Generate Password</button>
 
 
 
@@ -37,5 +45,9 @@
 
     </content>
 
+    
+
+    <script src="assets/script.js">
+    </script>
 </body>
 </html>
