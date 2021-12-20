@@ -36,6 +36,9 @@ content {
 content p {
   margin: 10px;
 }
+content form {
+  margin: 15px;
+}
 content button {
   display: flex;
   justify-content: center;
@@ -58,4 +61,5 @@ button:hover {
 #password {
   border: rgb(54, 202, 34) solid 2px;
   padding: 7px;
+  overflow-wrap: break-word;
 }
