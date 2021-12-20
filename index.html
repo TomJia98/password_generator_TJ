@@ -18,10 +18,8 @@
 
     <content>
         <input type="range" id="password-range" min="8" max="128">
-        <p id="password-length">68</p>
-
-        
-
+        <p>Your password will contain <span id="password-length">68</span> characters <br><br></p>
+        <p>Please select characters to include in your password</p>
         <form>
             <input type="checkbox" id="lower-case">
             <label for="lower-case">Include Lowercase</label><br>
@@ -34,17 +32,14 @@
 
             <input type="checkbox" id="special-character">
             <label for="special-character"> Include Special Characters</label>
-          </form>
+        </form>
 
           <button id="generate">Generate Password</button>
-
-          <p id="password">your password</p>
-
-
-
-
-
-
+            <div>
+                
+                <p id="descriptor">Your new password will generate below</p>
+                <p id="password"></p>
+            </div>
     </content>
 
     

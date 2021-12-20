@@ -21,6 +21,8 @@ rangeValue.addEventListener("input", function(event){
                         // shows current slider value next to the slider
 
 generatePassword.addEventListener("click", function(event){
+                        // upon clicking the generate button, run the following code
+
     hasLowercase = containLowercase.checked;
     hasUppercase = containUppercase.checked;
     hasNumbers = containNumbers.checked;
@@ -72,5 +74,5 @@ generatePassword.addEventListener("click", function(event){
 
     document.getElementById("password").innerHTML = finishedPassword.join('');
                         //prints the password to the page while removing the spaces and commas
-
+    document.getElementById("descriptor").innerHTML = "Your new password is"
 })

@@ -1,0 +1,61 @@
+:root {
+  --textcolor: rgb(54, 202, 34);
+}
+* {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url(./images/matrix\ background.jpg);
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  text-align: center;
+  margin: 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--textcolor);
+  background-color: rgb(0, 0, 0, 0.9);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0, 0.9);
+  color: var(--textcolor);
+  margin: 20px;
+  border-radius: 10px;
+}
+
+content p {
+  margin: 10px;
+}
+content button {
+  display: flex;
+  justify-content: center;
+  flex: 1 0 100;
+  color: rgb(54, 202, 34);
+  background: rgb(46, 42, 42);
+}
+
+button:hover {
+  background: rgb(31, 29, 29);
+}
+#password-range {
+  -webkit-appearance: none;
+  background: rgb(46, 42, 42);
+}
+#descriptor {
+  display: flex;
+  justify-content: center;
+}
+#password {
+  border: rgb(54, 202, 34) solid 2px;
+  padding: 7px;
+}
